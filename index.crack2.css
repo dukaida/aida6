@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    background-color: orangered;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8B0000, #90EE90); /* degradado de rojo profundo/verde claro */
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+}
+
+header h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio aside/div */
+}
+
+.aside {
+    width: 20%;                  /* aside ocupa el 20% del ancho de la página */
+    background-color: lightblue;  /* del aside */
+    padding: 20px;
+    height: 830px;               /* dos filas de 400px + 30px de márgenes */
+    margin-right: 20px;          /* espacio a la derecha del aside */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;             /* que los div hagan wrap */
+    justify-content: space-between;
+    width: 75%;                  /* El contenido ocupa el 75% del ancho de la página */
+}
+
+.box {
+    width: 48%;                  /* cada caja ocupa el 48% del contenedor, dejando espacio para el margen */
+    height: 400px;
+    background-color: gray;                /* altura de cada caja */
+    margin-bottom: 20px;         /* spacio entre las filas de cajas */
+    display: flex;
+    justify-content: center;     /* centrado horizontal */
+    align-items: center;         /* centrado vertical*/
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;          /* bordes redondeados */
+}
+
+.boxx {
+    width: 48%;                  /* cada caja ocupa el 48% del contenedor, dejando espacio para el margen */
+    height: 400px;
+    background-color: gray;                /* altura de cada caja */
+    margin-bottom: 20px;         /* spacio entre las filas de cajas */
+    /* display: flex; */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;          /* bordes redondeados */
+}
+
+
+#ataque a{ color: black;font-weight: 700; font-size: 20px;} /*a-> Cinéfilos al ataque*/
+
+#servicios article a{ color: black;font-weight: 700; font-size: 20px;} /*<<<<<<<<<a->Nuestros Servicios*/
+
+#servicios article{ /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Nuestros Servicios*/
+    margin-left: 20px; /* ajustar el margen dentro de los artículos */
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; /* margen superior e inferior */
+}
+
+.google-maps {
+    width: 300px;
+    max-width: 600px; /* ancho máximo del iframe */
+    height: 300px;    /* altura del iframe */
+    border: 0;
+    border-radius: 10px; /* bordes redondeados */
+}
+
+
+footer {
+    background: linear-gradient(to right, #8B0000, #90EE90); /* degradado */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    width: 24px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
